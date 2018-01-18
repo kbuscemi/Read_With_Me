@@ -4,24 +4,25 @@
 }
 #logo1 {
     display: block;
-    margin: 39px 320px 14px auto;
+    margin: 34px auto 0 auto;
 }
 
-.nav, .nav2 {
+
+.nav2 {
     float: right;
     margin-top: 10px;
     font-size: 14px;
 }
 
-.nav, .nav2 a {
+.nav2 a {
     color: black;
 }
 
-.nav, .nav2 a:link {
+ .nav2 a:link {
     text-decoration: none;
 }
 
-.nav, .nav2 a:hover {
+.nav2 a:hover {
     color: gray;
 }
 
@@ -74,7 +75,7 @@
     font-size: 17px;
 }
 
-.text, .secure {
+.text, .secure, {
     float: right;
     border-radius: 4.5px;
     border: .7px solid black;
@@ -151,6 +152,7 @@ h4, p {
 .rightContainer {
     float: right;
     width: 200px;
+    margin-top: 45px;
 }
 
 #bookinfo{
@@ -161,5 +163,29 @@ h4, p {
 
 #bookimages {
     width: 400px;
+}
+
+.storyboard {
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    margin-top: 34px;
+}
+
+#storyboardName {
+    padding-right: 10px;
+}
+
+#name {
+    margin-right: 5px;
+    font-size: 23px;
 }
 
