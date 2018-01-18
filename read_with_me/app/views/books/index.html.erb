@@ -1,0 +1,16 @@
+<body class="backgroundcolor">
+
+<img class="logo2" src="https://i.imgur.com/1LY2500.png">
+
+<h3>Library of Books</h3>
+
+<div class="container-fluid">
+    <div class="row">
+            <% @books.each do |b| %>
+                <%= link_to image_tag(b.image_url), book_path(b) %>
+            <% end %>           
+     </div>
+</div>
+</body>
+
+   

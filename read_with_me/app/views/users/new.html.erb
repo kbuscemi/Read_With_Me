@@ -1,0 +1,38 @@
+<img class="logo2" src="https://i.imgur.com/1LY2500.png">
+
+<h2 class="info">Create an Account Below</h2>
+<%= form_for @user do |f| %>
+    <% if @user.errors.any? %>
+        <div class="error_messages">
+            <h2>Entry is invalid</h2>
+            <ul>
+                <% for message in @user.errors.full_messages %>
+                 <li><%= message %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+    <div class="border1">
+    <div class="field1">
+        <%= f.label :name, :class => "labels" %> &nbsp;&nbsp;
+        <%= f.text_field :name, :class => "text" %>
+    </div>
+        <div class="field1">
+            <%= f.label :email, :class => "labels" %> &nbsp;&nbsp;
+            <%= f.text_field :email, :class => "text" %>
+        </div>
+        
+        <div class="field1">
+            <%= f.label :password, :class => "labels" %> &nbsp;&nbsp;
+            <%= f.password_field :password, :class => "text" %>
+        </div>
+        <div class="field1">
+            <%= f.label :password_confirmation, :class => "labels" %> &nbsp;&nbsp;
+            <%= f.password_field :password_confirmation, :class => "text" %>
+        </div>
+        <div class="actions"><%= f.submit "Create Account", :class => "button" %></div>
+    </div>
+<% end %>
+
+    
+

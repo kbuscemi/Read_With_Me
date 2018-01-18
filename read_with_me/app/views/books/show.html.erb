@@ -1,0 +1,43 @@
+<body class="backgroundcolor">
+<div id="logo3">
+    <img class="logo2" src="https://i.imgur.com/1LY2500.png">
+</div>
+
+<div class="leftContainer">
+        <div id="bookinfo">
+            <div>
+                <h4>Title:&nbsp;&nbsp;</h4><p><%= @book.title %></p>
+            </div>
+
+            <div>
+                <h4>Author:&nbsp;&nbsp;</h4><p><%= @book.author %></p>
+            </div>
+
+            <div>
+                <h4>Genre:&nbsp;&nbsp;</h4><p><%= @book.fiction ? "Fiction" : "Non-Fiction" %></p>
+            </div>
+
+            <div>
+                <h4>Summary:&nbsp;&nbsp;</h4><p><%= @book.summary %></p>
+            </div>
+        </div>
+    <div id = "bookimages">
+        <%= image_tag(@book.image_url)%>
+    </div>
+</div>
+<div class="rightContainer">
+    <div class="storyboard">
+        <h4>My Storyboards:</h4>
+        <% @storyboards.each do |s| %>
+                <h4><%= s.name %></h4>
+                <p>
+                    <% if s.books.include?(@book) %>
+                        Already Included
+                    <% else %>
+                        <%= link_to "Add Book", add_book_path(s, @book), method: :post, class: 'btn btn-primary btn-xs' %>
+                    <% end %>
+                </p>
+        <% end %>
+    </div>
+</div>
+</body>

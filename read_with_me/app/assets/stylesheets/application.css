@@ -1,0 +1,165 @@
+/*~~~~ Show Page ~~~~ */
+* {
+    font-family: 'Heebo', sans-serif;
+}
+#logo1 {
+    display: block;
+    margin: 39px 320px 14px auto;
+}
+
+.nav, .nav2 {
+    float: right;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.nav, .nav2 a {
+    color: black;
+}
+
+.nav, .nav2 a:link {
+    text-decoration: none;
+}
+
+.nav, .nav2 a:hover {
+    color: gray;
+}
+
+.library {
+    width: 100%
+}
+
+/* ~~~ Sign Up/Login Page ~~~~ */
+
+.logo2, #logo3 {
+    margin: 10px 0 0 10px;
+}
+
+
+.info {
+    font-size: 24px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.field1, .field2 {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.field1 {
+    padding-left: 32px;
+}
+
+.field2 {
+    padding-left: 40px;
+}
+
+.border1, .border2 {
+    border: 1px solid black;
+}
+
+.border1 {
+    margin: 33px 350px 0 350px;
+    padding: 40px 0 30px 0;
+}
+
+.border2 {
+    margin: 33px 353px 0 383px;
+    padding: 40px 0 24px 0;
+}
+
+.labels {
+    font-size: 17px;
+}
+
+.text, .secure {
+    float: right;
+    border-radius: 4.5px;
+    border: .7px solid black;
+}
+
+.text {
+    margin-right: 24px;
+}
+
+.secure {
+    margin-right: 36px;
+}
+
+.actions {
+    text-align: center;
+   
+    margin-top: 20px;
+}
+
+.button {
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    border-radius: 6px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+}
+
+
+/* ~~~ Book Page ~~~~ */
+.backgroundcolor {
+    background-color: lightgrey;
+}
+
+img {
+    padding-top: 7px;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 7px;
+    padding-right: 6px;
+    padding-left: 5px;
+}
+
+h3 {
+    margin-left: 23px;
+}
+
+/* ~~ Book Show Page ~~~ */
+
+div {
+    display: block;
+
+}
+h4 {
+    font-size: 17px;
+}
+
+h4, p {
+    text-align: left;
+    display: inline;
+}
+
+.leftContainer, .rightContainer {
+    margin-top: 30px;
+}
+
+.leftContainer {
+    float: left;
+    width: 79%;
+}
+
+.rightContainer {
+    float: right;
+    width: 200px;
+}
+
+#bookinfo{
+    width: 500px;
+    margin-top: 300px;
+    float: right;
+}
+
+#bookimages {
+    width: 400px;
+}
+
