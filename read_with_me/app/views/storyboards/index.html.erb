@@ -4,24 +4,24 @@
 <h1>My Storyboards</h1>
 
 <h5>Create New Storyboard</h5>
-<%= form_for @storyboard do |f| %>
-    <%# <div> 
-        <%= f.label :name 
-    </div> %>
-    <div> 
-        <%= f.text_field :name %>
+    <div class="right">
+        <%= form_for @storyboard do |f| %>
+            <div> 
+                <%= f.text_field :name %>
+            </div>
+            <div>
+                <%= f.submit 'Create' %>
+            </div>
+        <% end %> 
     </div>
-    <div>
-        <%= f.submit 'Create' %>
-    </div>
-<% end %> 
-
-<ul>
-    <% @storyboards.each do |storyboard| %>
-        <li><%= link_to "#{storyboard.name} - details", storyboard_path(storyboard) %>
-        <%# <%= link_to 'Remove', storyboard, method: :delete%> 
-        </li>
-    <% end %>
-</ul>
-
+    <%# <div class="left">
+        <ul>
+            <% @storyboards.each do |storyboard| %>
+                <%# <li><%= storyboard.name.capitalize %>
+                    <%# <% @stoyboardItem.each do |i| %>
+                        <%# <li><%= i.(book_id:, storyboard_id:) %>
+                    <%# <% end %> 
+            <%# <% end %>  
+        <%# </ul> %>
+    <%# </div> %> 
 </body>

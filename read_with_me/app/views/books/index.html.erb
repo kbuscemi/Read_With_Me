@@ -2,13 +2,18 @@
 
 <img class="logo2" src="https://i.imgur.com/1LY2500.png">
 
-<h3>Library of Books</h3>
+<h3>Book Library</h3>
 
 <div class="container-fluid">
     <div class="row">
             <% @books.each do |b| %>
+                <%# <div class="col-md-4">
+                <div class="bookImage"> %>
                 <%= link_to image_tag(b.image_url), book_path(b) %>
-            <% end %>           
+                <%# </div>  
+                </div> %>
+            <% end %> 
+                    
      </div>
 </div>
 </body>

@@ -14,20 +14,17 @@
     font-size: 14px;
 }
 
-.nav2 a {
+a {
     color: black;
 }
 
- .nav2 a:link {
-    text-decoration: none;
-}
-
-.nav2 a:hover {
-    color: gray;
+ a:hover {
+   text-decoration: none;
+   color: gray;
 }
 
 .library {
-    width: 100%
+    width: 100%;
 }
 
 /* ~~~ Sign Up/Login Page ~~~~ */
@@ -75,7 +72,7 @@
     font-size: 17px;
 }
 
-.text, .secure, {
+.text, .secure {
     float: right;
     border-radius: 4.5px;
     border: .7px solid black;
@@ -91,7 +88,6 @@
 
 .actions {
     text-align: center;
-   
     margin-top: 20px;
 }
 
@@ -180,7 +176,7 @@ li {
     margin-top: 34px;
 }
 
-#storyboardName {
+.storyboardName {
     padding-right: 10px;
 }
 
@@ -188,4 +184,3 @@ li {
     margin-right: 5px;
     font-size: 23px;
 }
-

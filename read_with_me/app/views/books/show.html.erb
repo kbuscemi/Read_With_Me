@@ -31,12 +31,15 @@
         <ul>
             <% @storyboards.each do |s| %>
              <li>
-                <h4 id="storyboardName"><%= s.name.capitalize %>&nbsp;</h4>
+                <h4 class="storyboardName"><%= link_to s.name.capitalize, storyboards_path %>&nbsp;</h4>
+    
                     <p>
                         <% if s.books.include?(@book) %>
                             Already Included
+                            <%= link_to "Remove", remove_book_path(s, @book), method: :delete, class: 'btn btn-danger btn-xs' %>
                         <% else %>
                             <%= link_to "Add Book", add_book_path(s, @book), method: :post, class: 'btn btn-primary btn-xs' %>
+                            <%= link_to "Remove", remove_book_path(s, @book), method: :delete, class: 'btn btn-danger btn-xs' %>
                         <% end %>
                     </p>
                 </li>
