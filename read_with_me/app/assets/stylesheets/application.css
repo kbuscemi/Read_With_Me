@@ -221,6 +221,14 @@ li {
     margin-top: 10px;
 }
 
+.addBook, .delete {
+    float: right;
+}
+
+.addBook {
+    padding-right: 37px;
+}
+
 /* ~~~ Storyboard Page ~~~*/
 
 .rightSide {

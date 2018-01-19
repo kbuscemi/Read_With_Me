@@ -21,7 +21,7 @@ Book.create([
     {title: 'Gone Girl', author: 'Gillian Flynn', summary: 'Do not judge a book by its cover.', image_url: 'https://i.imgur.com/lMuo8UX.jpg'},
     {title: 'Coco Chanel', author: 'Lisa Chaney', summary: 'A glimpse into the life of Coco Chanel.', fiction: false, image_url: 'https://i.imgur.com/rDVLlxk.jpg'},
     {title: 'Life of Pi', author: 'Yann Martel', summary: 'Imagination is a powerful weapon.', image_url: 'https://i.imgur.com/5C0kYls.jpg'},
-    {title: 'Lolita', author: 'Valdimir Nabokov', summary: 'The powerful of temptation can be deadly.', image_url: 'https://i.imgur.com/263mfo9.jpg'},
+    {title: 'Lolita', author: 'Valdimir Nabokov', summary: 'The power of temptation can be deadly.', image_url: 'https://i.imgur.com/263mfo9.jpg'},
     {title: 'The Black Hand', author: 'Stephan Talty', summary: 'How one many climbed the ranks of a famous Mexican gang and left to tell the tail.', fiction: false, image_url: 'https://i.imgur.com/HGeJMU6.jpg'},
     {title: 'The Kite Runner', author: 'Khaled Hosseini', summary: 'A story of an unlikely friendship.', image_url: 'https://i.imgur.com/syvuWV6.jpg'},
     {title: 'The Old Man and the Sea', author: 'Ernest Hemingway', summary: 'A powerful story of a Cuban fisherman.', image_url: 'https://i.imgur.com/B51Bvo8.jpg'},

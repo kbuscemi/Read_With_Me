@@ -34,10 +34,14 @@
                 <h4 class="storyboardName"><%= link_to s.name.capitalize, storyboards_path %>&nbsp;</h4>
                     <p>
                         <% if s.books.include?(@book) %>
-                             <em>Added</em>&nbsp;&nbsp;
-                             <%= link_to "Remove", remove_book_path(s, @book), method: :delete, class: 'btn btn-danger btn-xs' %>
+                            <em>Added</em>&nbsp;&nbsp;
+                            <div class="delete">
+                                <%= link_to "Remove", remove_book_path(s, @book), method: :delete, class: 'btn btn-danger btn-xs' %>
+                            </div>
                         <% else %>
-                        <%= link_to "Add Book", add_book_path(s, @book), method: :post, class: 'btn btn-primary btn-xs' %>
+                            <div class="addBook">
+                                <%= link_to "Add Book", add_book_path(s, @book), method: :post, class: 'btn btn-primary btn-xs' %>
+                            </div>
                         <% end %>
                     </p>
                 </li>
