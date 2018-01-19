@@ -14,7 +14,7 @@ My goal is for the user to be able to find new books to read and to ultimately r
 to include books that I have read over the years and these are books I recommend if you haven't read them already. I hope you enjoy!!
 
 ---
-<img src="https://i.imgur.com/J0863Uu.png>
+<img src="https://i.imgur.com/J0863Uu.png">
 
 ### Technologies
 I used the following technologies to build this full stack app:
