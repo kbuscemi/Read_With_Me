@@ -1,4 +1,4 @@
-# Read_With_Me
+# Read With Me
 
 <img src="https://i.imgur.com/F2iSDay.png">
 
@@ -27,11 +27,11 @@ I used the following technologies to build this full stack app:
 ---
 
 Before building my app I devised a wireframe, userstories, and an ERD which can be found on my Trello board.
-- You can view my board **[here] (https://trello.com/b/qEvKyfuF/project-2)**
+- You can view my board **[here](https://trello.com/b/qEvKyfuF/project-2)**
 
 ---
 
-And my finished app can be viewed **[here] (https://read-w-mee.herokuapp.com/)
+And my finished app can be viewed **[here](https://read-w-mee.herokuapp.com/)**
 
 ---
 
