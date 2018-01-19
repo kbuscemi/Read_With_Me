@@ -7,11 +7,9 @@
 <div class="container-fluid">
     <div class="row">
             <% @books.each do |b| %>
-                <%# <div class="col-md-4">
-                <div class="bookImage"> %>
-                <%= link_to image_tag(b.image_url), book_path(b) %>
-                <%# </div>  
-                </div> %>
+             <div class="col-md-4">
+                <%= link_to image_tag(b.image_url), book_path(b), class: "bookImage" %>  
+            </div>
             <% end %> 
                     
      </div>

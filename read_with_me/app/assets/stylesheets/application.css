@@ -54,7 +54,7 @@ a {
     padding-left: 40px;
 }
 
-.border1, .border2, .right {
+.border1, .border2 {
     border: 1px solid black;
 }
 
@@ -157,8 +157,9 @@ h4, p {
     float: right;
 }
 
-#bookimages {
-    width: 400px;
+img.bookImgae {
+    width: 300px;
+    height: 200px;
 }
 
 .storyboard {
@@ -190,7 +191,7 @@ li {
     border: #0D3956;
 }
 
-.btn-danger:hover, .btn-primary:hover {
+.btn-danger:hover, .btn-primary:hover, #add:hover {
     background-color: black;
 }
 
@@ -201,7 +202,7 @@ li {
 
 /* ~~~ Storyboard Page ~~~*/
 
-.right {
+.rightSide {
     float: right;
     padding: 30px;
     border-radius: 14%;

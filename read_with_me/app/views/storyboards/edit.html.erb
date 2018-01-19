@@ -1,0 +1,14 @@
+<body class="backgroundcolor">
+<div class="info">
+<h5>Edit Storyboard Name:</h5>
+        <%= form_for @storyboard do |f| %>
+            <div> 
+                <%= f.text_field :name %>
+            </div>
+            <div>
+                <%= f.submit 'Edit Name' %>
+            </div>
+        <% end %>
+    <%= link_to "Back to My Storyboards", storyboards_path%>
+</div>
+</body>

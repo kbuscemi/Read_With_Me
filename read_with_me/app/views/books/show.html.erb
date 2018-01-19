@@ -21,7 +21,7 @@
                 <h4>Summary:&nbsp;&nbsp;</h4><p><%= @book.summary %></p>
             </div>
         </div>
-    <div id = "bookimages">
+    <div>
         <%= image_tag(@book.image_url)%>
     </div>
 </div>
@@ -32,7 +32,6 @@
             <% @storyboards.each do |s| %>
              <li>
                 <h4 class="storyboardName"><%= link_to s.name.capitalize, storyboards_path %>&nbsp;</h4>
-    
                     <p>
                         <% if s.books.include?(@book) %>
                              <em>Added</em>&nbsp;&nbsp;|&nbsp;

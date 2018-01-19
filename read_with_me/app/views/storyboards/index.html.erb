@@ -3,7 +3,7 @@
 
 <h1>My Storyboards</h1>
 
-<div class="right">
+<div class="rightSide">
     <h5>Create New Storyboard:</h5>
         <%= form_for @storyboard do |f| %>
             <div class ="create"> 
@@ -17,7 +17,8 @@
     <div class="left">
         <ul>
             <% @storyboards.each do |storyboard| %>
-                <li class="title"><%= storyboard.name.capitalize %></li>
+               <li class="title"><%= storyboard.name.capitalize %></li>
+               <%= link_to "Edit Name", edit_storyboard_path(storyboard), class: 'btn btn-primary btn-xs' %>
                 <%= link_to "Remove Storyboard", storyboard_path(storyboard), method: :delete, class: 'btn btn-danger btn-xs' %>
                     <% storyboard.books.each do |b| %> 
                         <li><%= image_tag(b.image_url, class: 'picture') %></li>
