@@ -4,14 +4,26 @@
 }
 #logo1 {
     display: block;
-    margin: 34px auto 0 auto;
+    margin: 34px auto 0 420px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
 }
 
 
-.nav2 {
+.nav2, .logOut {
     float: right;
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 14px;
+}
+
+.logOut {
+    margin: 0;
+}
+
+a:hover.logOut {
+    color:#FE6F5E
 }
 
 a {
@@ -23,21 +35,24 @@ a {
    color: gray;
 }
 
-.library {
+img.library {
     width: 100%;
 }
 
 /* ~~~ Sign Up/Login Page ~~~~ */
 
-.logo2, #logo3 {
-    margin: 10px 0 0 10px;
-}
-
-
 .info {
     font-size: 24px;
     margin-top: 70px;
     text-align: center;
+}
+
+p#alert {
+    margin-left: 500px;
+    color: red;
+}
+.logo2, #logo3 {
+    margin: 10px 0 0 10px;
 }
 
 .field1, .field2, {
@@ -54,7 +69,7 @@ a {
     padding-left: 40px;
 }
 
-.border1, .border2 {
+.border1, .border2, .editBox {
     border: 1px solid black;
 }
 
@@ -72,7 +87,7 @@ a {
     font-size: 17px;
 }
 
-.text, .secure, .create {
+.text, .secure, .create, .rightSide {
     float: right;
     border-radius: 4.5px;
     border: .7px solid black;
@@ -102,7 +117,7 @@ a {
 
 
 /* ~~~ Book Page ~~~~ */
-.backgroundcolor {
+.backgroundColor {
     background-color: #F5F5F5;
 }
 
@@ -118,7 +133,7 @@ img {
 }
 
 h3 {
-    margin-left: 23px;
+    margin: 30px 0 0 23px;
 }
 
 /* ~~ Book Show Page ~~~ */
@@ -151,18 +166,20 @@ h4, p {
     margin-top: 45px;
 }
 
-#bookinfo{
+#bookInfo{
     width: 500px;
     margin-top: 300px;
     float: right;
 }
 
-img.bookImgae {
-    width: 300px;
-    height: 200px;
+img.bookPic {
+    width: 310px;
+    height: 400px;
+    margin-top: 13px;
+    padding: 10px 29px 9px 21px;
 }
 
-.storyboard {
+.storyBoard {
     margin-top: 5px;
 }
 
@@ -200,6 +217,10 @@ li {
     border: #560335;
 }
 
+.bottom {
+    margin-top: 10px;
+}
+
 /* ~~~ Storyboard Page ~~~*/
 
 .rightSide {
@@ -227,8 +248,13 @@ h5 {
     margin-left: 45px;
 }
 
+.submitButton {
+    margin-left: 33px;
+}
+
 .create {
     margin-bottom: 17px;
+    margin-top: 3px;
 }
 
 #add {
@@ -238,7 +264,47 @@ h5 {
     border-radius: 4.5px;
 }
 
+img.picture {
+    height: 145px;
+}
+
 .picture {
     width: 100px;
     display: inline-block;
 }
+
+.editBox {
+    float: right;
+    margin: 0;
+    padding-top: 42px;
+    padding-right: 49px;
+    padding-left: 53px;
+    padding-bottom: 33px;
+    margin: 200px 58px 0 0;
+}
+
+.editName {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+a.link {
+    margin-top: 100px;
+}
+
+.back {
+    margin-left: 62px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+.left {
+    margin-top: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+

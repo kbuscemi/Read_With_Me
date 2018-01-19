@@ -1,10 +1,10 @@
-<body class="backgroundcolor">
+<body class="backgroundColor">
 <div id="logo3">
     <img class="logo2" src="https://i.imgur.com/1LY2500.png">
 </div>
 
 <div class="leftContainer">
-        <div id="bookinfo">
+        <div id="bookInfo">
             <div>
                 <h4>Title:&nbsp;&nbsp;</h4><p><%= @book.title %></p>
             </div>
@@ -26,7 +26,7 @@
     </div>
 </div>
 <div class="rightContainer">
-    <div class="storyboard">
+    <div class="storyBoard">
         <h4 id="name">My Storyboards:</h4>
         <ul>
             <% @storyboards.each do |s| %>
@@ -34,11 +34,10 @@
                 <h4 class="storyboardName"><%= link_to s.name.capitalize, storyboards_path %>&nbsp;</h4>
                     <p>
                         <% if s.books.include?(@book) %>
-                             <em>Added</em>&nbsp;&nbsp;|&nbsp;
-                            <%= link_to "Remove", remove_book_path(s, @book), method: :delete, class: 'btn btn-danger btn-xs' %>
+                             <em>Added</em>&nbsp;&nbsp;
+                             <%= link_to "Remove", remove_book_path(s, @book), method: :delete, class: 'btn btn-danger btn-xs' %>
                         <% else %>
-                            <%= link_to "Add Book", add_book_path(s, @book), method: :post, class: 'btn btn-primary btn-xs' %>
-                            <%= link_to "Remove", remove_book_path(s, @book), method: :delete, class: 'btn btn-danger btn-xs' %>
+                        <%= link_to "Add Book", add_book_path(s, @book), method: :post, class: 'btn btn-primary btn-xs' %>
                         <% end %>
                     </p>
                 </li>

@@ -1,7 +1,7 @@
-<body class="backgroundcolor">
+<body class="backgroundColor">
 <img class="logo2" src="https://i.imgur.com/1LY2500.png">
 
-<h1>My Storyboards</h1>
+<h2>My Storyboards</h2>
 
 <div class="rightSide">
     <h5>Create New Storyboard:</h5>
@@ -15,15 +15,17 @@
         <% end %> 
     </div>
     <div class="left">
-        <ul>
             <% @storyboards.each do |storyboard| %>
-               <li class="title"><%= storyboard.name.capitalize %></li>
+               <h6 class="title"><%= storyboard.name.capitalize %></h6>
+            <div>
                <%= link_to "Edit Name", edit_storyboard_path(storyboard), class: 'btn btn-primary btn-xs' %>
                 <%= link_to "Remove Storyboard", storyboard_path(storyboard), method: :delete, class: 'btn btn-danger btn-xs' %>
+             </div>
+             <div class="bottom">
                     <% storyboard.books.each do |b| %> 
-                        <li><%= image_tag(b.image_url, class: 'picture') %></li>
-                    <% end %> 
+                        <%= image_tag(b.image_url, class: 'picture') %>
+                    <% end %>
+            </div> 
             <% end %>  
-         </ul> 
     </div> 
 </body>
