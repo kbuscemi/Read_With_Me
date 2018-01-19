@@ -1,5 +1,6 @@
 class StoryboardsController < ApplicationController
-
+    before_action :authorize
+    
     def index
         @storyboards = current_user.storyboards
         @storyboard = Storyboard.new
