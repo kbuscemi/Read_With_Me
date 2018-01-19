@@ -3,25 +3,26 @@
 
 <h1>My Storyboards</h1>
 
-<h5>Create New Storyboard</h5>
-    <div class="right">
+<div class="right">
+    <h5>Create New Storyboard:</h5>
         <%= form_for @storyboard do |f| %>
-            <div> 
+            <div class ="create"> 
                 <%= f.text_field :name %>
             </div>
-            <div>
-                <%= f.submit 'Create' %>
+            <div class="submitBtn">
+                <%= f.submit 'Create', id: 'add' %>
             </div>
         <% end %> 
     </div>
-    <%# <div class="left">
+    <div class="left">
         <ul>
             <% @storyboards.each do |storyboard| %>
-                <%# <li><%= storyboard.name.capitalize %>
-                    <%# <% @stoyboardItem.each do |i| %>
-                        <%# <li><%= i.(book_id:, storyboard_id:) %>
-                    <%# <% end %> 
-            <%# <% end %>  
-        <%# </ul> %>
-    <%# </div> %> 
+                <li class="title"><%= storyboard.name.capitalize %></li>
+                <%= link_to "Remove Storyboard", storyboard_path(storyboard), method: :delete, class: 'btn btn-danger btn-xs' %>
+                    <% storyboard.books.each do |b| %> 
+                        <li><%= image_tag(b.image_url, class: 'picture') %></li>
+                    <% end %> 
+            <% end %>  
+         </ul> 
+    </div> 
 </body>

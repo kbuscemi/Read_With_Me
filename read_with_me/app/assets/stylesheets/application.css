@@ -40,7 +40,7 @@ a {
     text-align: center;
 }
 
-.field1, .field2 {
+.field1, .field2, {
     font-size: 16px;
     text-align: left;
     margin-bottom: 4px;
@@ -54,7 +54,7 @@ a {
     padding-left: 40px;
 }
 
-.border1, .border2 {
+.border1, .border2, .right {
     border: 1px solid black;
 }
 
@@ -72,7 +72,7 @@ a {
     font-size: 17px;
 }
 
-.text, .secure {
+.text, .secure, .create {
     float: right;
     border-radius: 4.5px;
     border: .7px solid black;
@@ -103,7 +103,7 @@ a {
 
 /* ~~~ Book Page ~~~~ */
 .backgroundcolor {
-    background-color: lightgrey;
+    background-color: #F5F5F5;
 }
 
 img {
@@ -183,4 +183,61 @@ li {
 #name {
     margin-right: 5px;
     font-size: 23px;
+}
+
+.btn-danger {
+    background-color: #0D3956;
+    border: #0D3956;
+}
+
+.btn-danger:hover, .btn-primary:hover {
+    background-color: black;
+}
+
+.btn-primary {
+    background-color: #560335;
+    border: #560335;
+}
+
+/* ~~~ Storyboard Page ~~~*/
+
+.right {
+    float: right;
+    padding: 30px;
+    border-radius: 14%;
+    margin-right: 40px;
+}
+
+h1 {
+    font-size: 29px;
+    margin: 0;
+    margin-top: 36px;
+}
+
+h5 {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    font-weight: 700;
+}
+
+.submitBtn {
+    margin: 0;
+    margin-left: 45px;
+}
+
+.create {
+    margin-bottom: 17px;
+}
+
+#add {
+    background-color: #560335;
+    color: white;
+    padding: 3px 11px 3px 11px;
+    border-radius: 4.5px;
+}
+
+.picture {
+    width: 100px;
+    display: inline-block;
 }
