@@ -11,6 +11,16 @@
     background-image: none;
 }
 
+.carousel {
+    width: 800px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-overflow {
+    overflow: visible;
+  }
 
 .nav2, .logOut {
     float: right;
@@ -34,10 +44,10 @@ a {
    text-decoration: none;
    color: gray;
 }
-
+/* 
 img.library {
     width: 100%;
-}
+} */
 
 /* ~~~ Sign Up/Login Page ~~~~ */
 
