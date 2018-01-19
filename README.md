@@ -12,7 +12,7 @@ My inspiration for buidling this website came from my love of reading. Ever sinc
 
  ### Technologies
  I used the following technologies to build this full stack app:
- - Ruby
+ - PostgreSQL
  - Ruby on Rails
  - HTML
  - CSS
